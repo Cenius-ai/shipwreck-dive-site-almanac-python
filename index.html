@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site catalog · Shipwreck Dive Site Almanac</title>
+<meta name="description" content="A static almanac of six wreck dive sites: depth profiles, sinking histories, slack water windows, dive briefings and a printable dive log.">
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="./assets/css/print.css" media="print">
+<script src="./assets/js/app.js" defer></script>
+<script src="./assets/js/data.js" defer></script>
+<script src="./assets/js/session.js" defer></script>
+<script src="./assets/js/router.js" defer></script>
+</head>
+<body class="site" data-page="catalog">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <a class="brand" href="./index.html">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false">
+        <path d="M3 7h34"></path>
+        <path d="M9 7v10"></path>
+        <path d="M20 7v20"></path>
+        <path d="M31 7v30"></path>
+        <path d="M13 31l7-4 7 4"></path>
+      </svg>
+    </span>
+    <span class="brand-name">Shipwreck Dive<br>Site Almanac</span>
+  </a>
+  <p class="brand-tag">Six wreck sites, one tide reference, and the numbers a dive boat actually needs.</p>
+  <nav class="primary-nav" aria-label="Primary">
+    <a href="./index.html" aria-current="page">Catalog</a>
+    <a href="./log.html">Dive log</a>
+  </nav>
+  <div class="session-slot" data-session-slot>
+    <a class="session-link" href="./signin.html">Sign in to the logbook</a>
+  </div>
+  <div class="masthead-foot">
+    <p class="chip chip--inverse">Planning aid</p>
+    <p class="masthead-meta">Every slack water window is computed from one static tide reference day.</p>
+    <p class="masthead-meta">Not for navigation, and not a substitute for a dive marshal&#39;s sign-off.</p>
+  </div>
+</header>
+
+<div class="content">
+  <main id="main">
+    <div class="page-head">
+      <p class="chip">Site catalog</p>
+      <h1>Six wrecks worth planning a dive day around</h1>
+      <p class="lede">Depth profiles, sinking histories, slack water windows and the briefing notes a boat actually uses. Everything is read from one static data file, so the almanac works with no connection to the sea.</p>
+    </div>
+
+    <div data-catalog-region>
+      <div class="section">
+        <p class="meta-line">Loading the almanac…</p>
+        <div class="skeleton-grid" aria-hidden="true">
+          <div class="skeleton-card">
+            <div class="skeleton-line skeleton-line--tall"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-line--short"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-line skeleton-line--tall"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-line--short"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-line skeleton-line--tall"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-line--short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2 class="chip">What you can do here</h2>
+      <div class="prose">
+        <p>Every wreck in this almanac has four surfaces: a catalog entry, a wreck page with its depth profile and sinking history, a dive briefing you can print for the boat folder, and a line in your own dive log.</p>
+      </div>
+      <dl class="fact-grid">
+        <div>
+          <dt>Wreck pages</dt>
+          <dd><a href="./wreck.html?id=thistlegorm">Depth, history, slack water</a></dd>
+        </div>
+        <div>
+          <dt>Briefings</dt>
+          <dd><a href="./briefing.html?id=thistlegorm">Hazards and checklist</a></dd>
+        </div>
+        <div>
+          <dt>Dive log</dt>
+          <dd><a href="./log.html">Your own entries, printable</a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section">
+      <h2 class="chip">How the slack windows work</h2>
+      <div class="prose">
+        <p>One spring tide reference day is published with four anchor times: high water, low water, a second high and a second low. Each site carries its own offset in minutes from the anchor that suits it, plus its own slack window length.</p>
+        <p>Anchor time plus the site offset gives the start of the window; add the site&#39;s published slack length and you have the end. The wreck page prints the anchor and the offset beside every window so you can check the arithmetic yourself.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Shipwreck Dive Site Almanac</span>
+    <span>Static pages, no tracking, no external requests.</span>
+    <a href="./signin.html">Demo sign-in</a>
+  </footer>
+</div>
+</body>
+</html>

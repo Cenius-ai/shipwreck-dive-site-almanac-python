@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dive log · Shipwreck Dive Site Almanac</title>
+<meta name="description" content="A printable dive log kept in this browser: site, date, depth, bottom time, visibility, water temperature, buddy and notes.">
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="./assets/css/print.css" media="print">
+<script src="./assets/js/app.js" defer></script>
+<script src="./assets/js/data.js" defer></script>
+<script src="./assets/js/session.js" defer></script>
+<script src="./assets/js/log.js" defer></script>
+<script src="./assets/js/router.js" defer></script>
+</head>
+<body class="site" data-page="log">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <a class="brand" href="./index.html">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false">
+        <path d="M3 7h34"></path>
+        <path d="M9 7v10"></path>
+        <path d="M20 7v20"></path>
+        <path d="M31 7v30"></path>
+        <path d="M13 31l7-4 7 4"></path>
+      </svg>
+    </span>
+    <span class="brand-name">Shipwreck Dive<br>Site Almanac</span>
+  </a>
+  <p class="brand-tag">Six wreck sites, one tide reference, and the numbers a dive boat actually needs.</p>
+  <nav class="primary-nav" aria-label="Primary">
+    <a href="./index.html">Catalog</a>
+    <a href="./log.html" aria-current="page">Dive log</a>
+  </nav>
+  <div class="session-slot" data-session-slot>
+    <a class="session-link" href="./signin.html">Sign in to the logbook</a>
+  </div>
+  <div class="masthead-foot">
+    <p class="chip chip--inverse">Kept on this machine</p>
+    <p class="masthead-meta">Entries live in this browser only. Print the log for the boat folder before clearing site data.</p>
+    <p class="masthead-meta">Not for navigation, and not a substitute for a dive marshal&#39;s sign-off.</p>
+  </div>
+</header>
+
+<div class="content">
+  <main id="main">
+    <div class="page-head">
+      <p class="chip">Dive log</p>
+      <h1>Your dive log</h1>
+      <p class="lede">Every dive you log here is kept in this browser and printed with the diver header at the top. Filter by site to check a wreck&#39;s season, then print the sheet for your records.</p>
+    </div>
+
+    <div data-log-region>
+      <div class="section">
+        <p class="meta-line">Checking your sign-in and loading the almanac…</p>
+        <div class="skeleton-grid" aria-hidden="true">
+          <div class="skeleton-card">
+            <div class="skeleton-line skeleton-line--tall"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-line--short"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-line skeleton-line--tall"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-line--short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Shipwreck Dive Site Almanac</span>
+    <a href="./index.html">All wreck sites</a>
+    <a href="./signin.html">Sign-in</a>
+  </footer>
+</div>
+</body>
+</html>

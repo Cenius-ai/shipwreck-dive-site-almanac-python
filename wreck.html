@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wreck site · Shipwreck Dive Site Almanac</title>
+<meta name="description" content="Depth profile, sinking history and slack water windows for one wreck dive site.">
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="./assets/css/print.css" media="print">
+<script src="./assets/js/app.js" defer></script>
+<script src="./assets/js/data.js" defer></script>
+<script src="./assets/js/slack.js" defer></script>
+<script src="./assets/js/session.js" defer></script>
+<script src="./assets/js/wreck.js" defer></script>
+<script src="./assets/js/router.js" defer></script>
+</head>
+<body class="site" data-page="wreck">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <a class="brand" href="./index.html">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" focusable="false">
+        <path d="M3 7h34"></path>
+        <path d="M9 7v10"></path>
+        <path d="M20 7v20"></path>
+        <path d="M31 7v30"></path>
+        <path d="M13 31l7-4 7 4"></path>
+      </svg>
+    </span>
+    <span class="brand-name">Shipwreck Dive<br>Site Almanac</span>
+  </a>
+  <p class="brand-tag">Six wreck sites, one tide reference, and the numbers a dive boat actually needs.</p>
+  <nav class="primary-nav" aria-label="Primary">
+    <a href="./index.html">Catalog</a>
+    <a href="./log.html">Dive log</a>
+  </nav>
+  <div class="session-slot" data-session-slot>
+    <a class="session-link" href="./signin.html">Sign in to the logbook</a>
+  </div>
+  <div class="masthead-foot">
+    <p class="chip chip--inverse">Planning aid</p>
+    <p class="masthead-meta">Slack windows come from the static tide reference day, not from a live feed.</p>
+    <p class="masthead-meta">Not for navigation, and not a substitute for a dive marshal&#39;s sign-off.</p>
+  </div>
+</header>
+
+<div class="content">
+  <main id="main" data-wreck-region>
+    <div class="page-head">
+      <p class="chip">Wreck site</p>
+      <h1>Loading this wreck…</h1>
+      <p class="lede">Reading data.json for the depth profile, sinking history and slack water windows.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Shipwreck Dive Site Almanac</span>
+    <a href="./index.html">All wreck sites</a>
+    <a href="./briefing.html?id=thistlegorm">Example briefing</a>
+  </footer>
+</div>
+</body>
+</html>
